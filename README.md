@@ -1,10 +1,14 @@
 # Shell-Trainer
-A website to practice your linux/shell commands
-
+A website to practice your linux shell commands
 
 ### Main features
 
-* TO BE ADDED
+- [ ] Randomly generate shell problems to solve
+- [ ] Set different levels of difficulty
+    - [ ] Easy
+    - [ ] Medium
+    - [ ] Hard
+
 # Initial Setup
 
 All instructions are for MacOS or Linux.
