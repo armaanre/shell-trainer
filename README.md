@@ -18,6 +18,31 @@ First clone the repository from Github and switch to the new directory:
      git clone git@github.com:armaanre/shell-trainer.git
      cd shell-trainer 
 
+## Frontend
+
+Install yarn globally if you don't have it already
+
+```
+npm i -g yarn
+```
+
+Change directory to frontend
+
+```
+cd frontend
+```
+
+Install dependencies
+
+```
+yarn install
+```
+
+Test you can launch the frontend
+
+```
+npm start
+```
 
 ## Backend
 
@@ -58,6 +83,14 @@ python manage.py runserver
 ```
 
 # Development Instructions
+
+## Frontend
+
+Launch the frontend app
+
+```
+npm start
+```
 
 ## Backend
 
