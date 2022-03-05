@@ -107,3 +107,5 @@ dist
 venv
 
 __pycache__
+
+.env
