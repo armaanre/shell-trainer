@@ -1,7 +1,14 @@
 import logo from './logo.svg';
 import './App.css';
+import axios from 'axios';
 
-function App() {
+const checkHealthz = async () => {
+  console.log('Running get request to /healthz')
+  const res = await axios.get(`/healthz`);
+  console.log(res)
+}
+
+const App = () => {
   return (
     <div className="App">
       <header className="App-header">
@@ -17,6 +24,9 @@ function App() {
         >
           Learn React
         </a>
+        <button onClick={checkHealthz}>
+          Check backend healthy
+        </button>
       </header>
     </div>
   );
