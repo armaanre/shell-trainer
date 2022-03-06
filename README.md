@@ -84,7 +84,21 @@ python manage.py runserver
 
 # Development Instructions
 
-## Frontend
+## Start both frontend and backend
+
+Change directory to frontend
+
+```
+cd frontend
+```
+
+Start both frontend and backend
+
+```
+npm run dev
+```
+
+## Frontend only
 
 Launch the frontend app
 
@@ -92,7 +106,7 @@ Launch the frontend app
 npm start
 ```
 
-## Backend
+## Backend only
 
 Starting the virtual environment:
 
