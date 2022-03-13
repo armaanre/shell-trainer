@@ -17,8 +17,8 @@
     "build": "react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject",
-    "serve": "python ../backend/manage.py runserver",
-    "activate": "cd ../backend && python activate.py",
+    "serve": "python ../ebdjango/manage.py runserver",
+    "activate": "source ~/eb-virt/bin/activate",
     "dev": "concurrently \"npm run start\" \"npm run serve\"" 
   },
   "eslintConfig": {
