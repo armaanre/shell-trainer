@@ -49,13 +49,13 @@ npm start
 Creating the virtualenv for your project.
 
 ```
-python -m venv venv
+virtualenv ~/eb-virt
 ```
 
 Start the virtual environment
 
 ```
-source venv/bin/activate
+source ~/eb-virt/bin/activate
 ```
 
 Change directory to backend:
