@@ -61,7 +61,7 @@ source ~/eb-virt/bin/activate
 Change directory to backend:
 
 ```
-cd backend
+cd ebdjango
 ``` 
 
 Install project dependencies:
