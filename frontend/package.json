@@ -19,7 +19,7 @@
     "eject": "react-scripts eject",
     "serve": "python ../ebdjango/manage.py runserver",
     "activate": "source ~/eb-virt/bin/activate",
-    "dev": "concurrently \"npm run start\" \"npm run serve\"" 
+    "dev": "concurrently \"yarn run start\" \"yarn run serve\"" 
   },
   "eslintConfig": {
     "extends": [
