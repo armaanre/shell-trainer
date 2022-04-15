@@ -41,7 +41,7 @@ yarn install
 Test you can launch the frontend
 
 ```
-npm start
+yarn start
 ```
 
 ## Backend
@@ -95,7 +95,7 @@ cd frontend
 Start both frontend and backend
 
 ```
-npm run dev
+yarn run dev
 ```
 
 ## Frontend only
@@ -103,7 +103,7 @@ npm run dev
 Launch the frontend app
 
 ```
-npm start
+yarn start
 ```
 
 ## Backend only
