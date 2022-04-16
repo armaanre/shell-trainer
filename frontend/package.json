@@ -25,6 +25,12 @@
     "activate": "source ~/eb-virt/bin/activate",
     "dev": "concurrently \"yarn run start\" \"yarn run serve\""
   },
+  "eslintConfig": {
+    "extends": [
+      "react-app",
+      "react-app/jest"
+    ]
+  },
   "browserslist": {
     "production": [
       ">0.2%",

@@ -28,10 +28,10 @@ jobs:
         run: |
           yarn install
 
-      - id: lint
-        working-directory: ./frontend
-        run: |
-          yarn run lint
+      # - id: lint
+      #   working-directory: ./frontend
+      #   run: |
+      #     yarn run lint
 
       - id: test
         working-directory: ./frontend
