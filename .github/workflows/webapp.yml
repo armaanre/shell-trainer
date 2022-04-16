@@ -24,17 +24,21 @@ jobs:
           submodules: true
   
       - id: install
+        working-directory: ./frontend
         run: |
-          yarn --cwd frontend install
+          yarn install
 
       - id: lint
+        working-directory: ./frontend
         run: |
-          yarn --cwd frontend run lint
+          yarn run lint
 
       - id: test
+        working-directory: ./frontend
         run: |
-          yarn --cwd frontend run test --watchAll=false 
+          yarn run test --watchAll=false 
 
       - id: build
+        working-directory: ./frontend
         run: |
-          yarn --cwd frontend run build
+          yarn run build
