@@ -45,7 +45,7 @@ jobs:
       - id: test
         working-directory: ./frontend
         run: |
-          yarn run test --watchAll=false 
+          yarn run test
 
       - id: build
         working-directory: ./frontend

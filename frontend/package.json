@@ -19,11 +19,13 @@
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",
-    "test": "react-scripts test",
+    "test": "react-scripts test --watchAll=false",
+    "test-watch": "react-scripts test",
     "lint": "eslint --ext .jsx .",
     "serve": "python ../ebdjango/manage.py runserver",
     "activate": "source ~/eb-virt/bin/activate",
-    "dev": "concurrently \"yarn run start\" \"yarn run serve\""
+    "dev": "concurrently \"yarn run start\" \"yarn run serve\"",
+    "prepare": "cd .. && husky install frontend/.husky"
   },
   "eslintConfig": {
     "extends": [
@@ -51,6 +53,7 @@
     "eslint-plugin-import": "^2.26.0",
     "eslint-plugin-jsx-a11y": "^6.5.1",
     "eslint-plugin-react": "^7.28.0",
+    "husky": "^7.0.4",
     "jest": "^27.5.1"
   }
 }

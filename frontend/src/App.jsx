@@ -8,9 +8,7 @@ import '@fontsource/roboto/400.css';
 import '@fontsource/roboto/500.css';
 import '@fontsource/roboto/700.css';
 
-const checkHealthz = async () => {
-  return await axios.get('/healthz');
-};
+const checkHealthz = async () => axios.get('/healthz');
 
 export default function App() {
   return (
