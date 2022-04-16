@@ -10,8 +10,8 @@ on:
       - main
 
 # Environment variables available to all jobs and steps in this workflow
-env:
-  NODE_ENV: "production"
+# env:
+#   FOO: "BAR"
 
 jobs:
   build_and_deploy_job:
@@ -31,6 +31,11 @@ jobs:
         working-directory: ./frontend
         run: |
           yarn install
+  
+      - id: install
+        working-directory: ./frontend
+        run: |
+          ls -la node_modules | grep airbnb
 
       - id: lint
         working-directory: ./frontend

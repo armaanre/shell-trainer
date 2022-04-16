@@ -1,11 +1,8 @@
 import React from 'react';
 import './App.css';
 import axios from 'axios';
-import {
-  Container, Typography, Button, Divider,
-} from '@mui/material';
+import { Container, Typography, Button } from '@mui/material';
 
-// Note passing middleware as the third argument requires redux@>=3.1.0
 import '@fontsource/roboto/300.css';
 import '@fontsource/roboto/400.css';
 import '@fontsource/roboto/500.css';
@@ -29,7 +26,6 @@ export default function App() {
             Solve shell problems
           </Typography>
         </Container>
-        <Divider />
         <Button variant="outlined" onClick={checkHealthz}>
           Check backend healthy
         </Button>
