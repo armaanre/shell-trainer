@@ -32,11 +32,6 @@ jobs:
         run: |
           yarn install
   
-      - id: debug
-        working-directory: ./frontend
-        run: |
-          ls -la node_modules | grep airbnb
-
       - id: lint
         working-directory: ./frontend
         run: |
