@@ -9,9 +9,7 @@ import '@fontsource/roboto/500.css';
 import '@fontsource/roboto/700.css';
 
 const checkHealthz = async () => {
-  console.info('Running get request to /healthz');
-  const res = await axios.get('/healthz');
-  console.info(res);
+  return await axios.get('/healthz');
 };
 
 export default function App() {
