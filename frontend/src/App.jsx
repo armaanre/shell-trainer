@@ -1,16 +1,15 @@
 import React from 'react';
 import './App.css';
-import axios from 'axios';
 import {
-  Container, Typography, Button, TextareaAutosize,
+  Container, Typography,
 } from '@mui/material';
 
 import '@fontsource/roboto/300.css';
 import '@fontsource/roboto/400.css';
 import '@fontsource/roboto/500.css';
 import '@fontsource/roboto/700.css';
-
-const checkHealthz = async () => axios.get('/healthz');
+import MultipleChoice from './components/MultipleChoice';
+import ProblemGenerator from './components/ProblemGenerator';
 
 export default function App() {
   return (
@@ -25,20 +24,11 @@ export default function App() {
           </Typography>
         </Container>
 
-        <TextareaAutosize
-          maxRows={4}
-          aria-label="maximum height"
-          placeholder="Maximum 4 rows"
-          defaultValue="Here we will solve some problems"
-          style={{ width: 1000, height: 1000, backgroundColor: 'beige' }}
-        />
+        <ProblemGenerator />
 
-        <Container maxWidth="sm">
-          <Button variant="outlined" onClick={checkHealthz}>
-            Check backend healthy
-          </Button>
+        <Container>
+          <MultipleChoice />
         </Container>
-
       </header>
     </div>
   );

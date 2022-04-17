@@ -7,3 +7,9 @@ test('renders shell trainer title', () => {
   const linkElement = screen.getByText(/Shell Trainer/i);
   expect(linkElement).toBeInTheDocument();
 });
+
+test('renders solve shell problems subheading', () => {
+  render(<App />);
+  const linkElement = screen.getByText(/Solve shell problems/i);
+  expect(linkElement).toBeInTheDocument();
+});
