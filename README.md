@@ -44,6 +44,18 @@ Test you can launch the frontend
 yarn start
 ```
 
+Run unit tests
+
+```
+yarn test
+```
+
+Run lint
+
+```
+yarn lint
+```
+
 ## Backend
 
 Creating the virtualenv for your project.
